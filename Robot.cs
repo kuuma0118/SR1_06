@@ -20,7 +20,7 @@ namespace SR1_04
             return name;
         }
 
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine("{0}は、攻撃した！", name);
         }

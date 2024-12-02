@@ -13,7 +13,7 @@ namespace SR1_04
         {
         }
 
-        public void Attack()
+        public override void Attack()
         {
                 Console.WriteLine("{0}はキャノン砲を撃った！", name);
         }
