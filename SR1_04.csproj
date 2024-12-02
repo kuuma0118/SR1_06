@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="FlyingRobot.cs" />
+    <Compile Remove="Robot.cs" />
+    <Compile Remove="TankRobot.cs" />
+  </ItemGroup>
+
 </Project>

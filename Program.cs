@@ -1,5 +1,4 @@
-﻿using SR1_04;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,19 +10,20 @@ namespace PlayerTest
     {
         static void Main(string[] args)
         {
-            Robot robot = new Robot("ロボット");
-            Console.WriteLine("名前:{0}", robot.GetName());
-            robot.Attack();
+            List<int> numbers = new List<int>();
+            Random rand = new Random();
 
-            FlyingRobot flyingRobot = new FlyingRobot("空飛ぶロボット");
-            Console.WriteLine("名前:{0}", flyingRobot.GetName());
-            flyingRobot.Attack();
+            for (int i = 0; i < 10; i++)
+            {
+                int randomValue = rand.Next(-5, 6);
+                numbers.Add(randomValue);
+            }
 
-            TankRobot tankRobot = new TankRobot("タンクロボ");
-            Console.WriteLine("名前:{0}", flyingRobot.GetName());
-            tankRobot.Attack();
-
-            Console.ReadLine();
+            Console.WriteLine("格納した値:");
+            foreach (int num in numbers)
+            {
+                Console.WriteLine(num);
+            }
         }
     }
 }
