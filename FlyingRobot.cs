@@ -15,7 +15,7 @@ namespace SR1_04
 
         public override void Attack()
         {
-                Console.WriteLine("{0}は、爆弾を落とした！", name);
+            Console.WriteLine("{0}は、爆弾を落とした！", name);
         }
     }
 }
